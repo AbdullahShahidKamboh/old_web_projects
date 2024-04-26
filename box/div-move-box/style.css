@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.container::before{
+    content: ' ';
+    position: absolute;
+    top: -6px;
+    left: 20px;
+    width: 180px;
+    min-height:315px ;
+    z-index: -1;
+    border-top: 4px solid var(--clr);
+    border-bottom: 4px solid var(--clr);
+    transform: skewY(25deg);
+    
+}
+.container:hover::before{
+    transform: skewY(0deg);
+    transition: .8s;
+}
+.container::after{
+    content: ' ';
+    position: absolute;
+    top: 40px;
+    left: -6px;
+    width: 225px;
+    min-height:240px ;
+    z-index: -2;
+    border-left: 4px solid var(--clr);
+    border-right: 4px solid var(--clr);
+    transform: skewX(15deg);
+    
+}
+.container:hover::after{
+    transform: skewX(0deg);
+    transition: .8s;
+}
+.container{
+    max-height: 300px;
+    max-width: 220px;
+    position: relative;
+}
+.container .box{
+    max-height: 300px;
+    max-width: 220px;
+    background-color: rgb(66, 54, 54);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    font-family:sans-serif ;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+.container .box .icon{
+    height: 90px;
+    transition: .7s; /*most imp it should be in parent not in hover*/
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 4rem;
+    align-items: center;
+    background: rgb(66, 54, 54);
+    color: var(--clr);
+    box-shadow: 0 0 0 4px var(--clr);
+    margin-bottom: 10px;
+    
+}
+.container .box:hover .icon{
+    box-shadow: 0 0 0 4px rgb(66, 54, 54) ,0 0 0 400px var(--clr);
+    background-color: var(--clr);
+    color: rgb(66, 54, 54) ;
+   
+}
+.container .box  h2{
+    color: white;
+}
+.container .box p{
+    color:gray;
+}
+.container .box a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background: var(--clr);
+    padding: 5px;
+
+
+}
+.container .box:hover a{
+    background:rgb(66, 54, 54) ;
+    color: var(--clr);
+    
+    
+}

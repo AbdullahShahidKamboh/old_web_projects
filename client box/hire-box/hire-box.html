@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="cbox">
+        <div class="pro">
+            <div class="imgbox"><img src="img.jpg" alt=""></div>
+            <div class="cont">
+             <h2>Someone famous <br> <span>
+                Product designer
+             </span></h2>
+            </div>
+            <div class="hire"></div>
+            
+        </div>
+        <div class="toggle">
+            <ul >
+                <li ><a href="" ><div class="picon" style="--clr: rgb(253, 65, 65);"><ion-icon name="logo-youtube"></ion-icon></div><div class="plink">Someone/youtube.com</div></a></li>
+                <li><a href="" ><div style="--clr: black" class="picon"><ion-icon name="mail-outline"></ion-icon></div><div class="plink">Someone/@gmail.com</div></a></li>
+                <li><a href="" ><div  style="--clr: rgb(6, 253, 47);" class="picon"><ion-icon name="logo-whatsapp"></ion-icon></div><div class="plink">Someone/whatsapp.com</div></a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let hire = document.querySelector('.hire');
+        let head = document.getElementsByClassName('hire');
+        head.innerHTML = "<p>Hire me</p>";
+        hire.onclick = function (){
+          if(  toggle.style.opacity != "1"){
+            toggle.style.opacity = "1";
+            hire.style.backgroundColor = 'brown';
+            hire.style.color = 'white';
+        
+
+          }else{
+            toggle.style.opacity = "0";
+            hire.style.backgroundColor = 'white';
+            hire.style.color = 'black';
+
+          }
+            
+        }
+        
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

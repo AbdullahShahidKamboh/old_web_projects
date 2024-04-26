@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Name Anime</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(44, 37, 37);
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .ame{
+            width: 200px;
+            /* border: 2px solid red; */
+            overflow: hidden;
+            cursor: pointer;
+
+        }
+        .svgT{
+            fill: none;
+            font-size: 6rem;
+            stroke: red;
+            stroke-width: 5;
+            font-family: impact;
+            stroke-dasharray: 1355;
+            stroke-dashoffset: 0;
+            
+        }
+        .svgT2{
+            fill: none;
+            font-size: 2rem;
+            fill: white;
+            stroke: 0;
+            stroke-width: 2;
+            stroke-dasharray: 1355;
+            stroke-dashoffset: 0;
+            font-family: impact;
+        }
+        
+        .ame:hover .svgT  {
+            animation:anime1 4s linear 0.1s 1 forwards;
+        }
+        @keyframes anime1 {
+            0%{
+                stroke-dashoffset: 0;
+            }
+            
+            40%{
+                stroke-dashoffset: 1355;
+            }
+            80%{
+                stroke-dashoffset: 2710;
+                fill: transparent;
+            }
+            100%{
+                stroke-dashoffset: 2710;
+                fill: red;
+                stroke: none;
+                
+            }
+        }
+        .ame:hover .svgT2  {
+            animation:anime2 4s linear 0.1s 1 forwards;
+        }
+        @keyframes anime2 {
+            0%{
+                stroke-dashoffset: 0;
+            }
+            
+            40%{
+                stroke-dashoffset: 1355;
+            }
+            80%{
+                stroke-dashoffset: 2710;
+                fill: transparent;
+            }
+            100%{
+                stroke-dashoffset: 2710;
+                fill: none;
+                stroke: white;
+            }
+        }
+        .ame .svgImg{
+            border-radius: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="ame">
+        <img src="" alt="">
+        <svg>
+            <image x="-20" y="-40" height="200" width="250" xlink:href="Tanjiro-Demon-Slayer.jpg" opacity="0.3" class="svgImg"></image>
+         <text x="20" y="90" text-anchor="start" class="svgT">ASK</text>
+         <text x="50" y="125" text-anchor="start" class="svgT2">anime</text>
+        
+        </svg>
+
+    </div>
+</body>
+</html>

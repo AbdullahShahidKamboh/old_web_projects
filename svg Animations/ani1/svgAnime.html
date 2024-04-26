@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(36, 31, 31);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .anime{
+            width: 200px;
+        }
+        .anime path{
+            stroke: red;
+            fill: transparent;
+            stroke-width: 10;
+            stroke-dasharray: 1355;
+            stroke-dashoffset: 0;
+            cursor: pointer;
+
+        }
+        .anime:hover path  {
+            animation:anime1 4s linear 0.1s 1 forwards;
+        }
+        @keyframes anime1 {
+            0%{
+                stroke-dashoffset: 0;
+            }
+            
+            40%{
+                stroke-dashoffset: 1355;
+            }
+            80%{
+                stroke-dashoffset: 2710;
+                fill: transparent;
+            }
+            100%{
+                stroke-dashoffset: 2710;
+                fill: red;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="anime">
+        <svg  viewBox="-10 -30 576 700"><path  d="M315 315l158.4-215L444.1 70.6 229 229 315 315zm-187 5l0 0V248.3c0-15.3 7.2-29.6 19.5-38.6L420.6 8.4C428 2.9 437 0 446.2 0c11.4 0 22.4 4.5 30.5 12.6l54.8 54.8c8.1 8.1 12.6 19 12.6 30.5c0 9.2-2.9 18.2-8.4 25.6L334.4 396.5c-9 12.3-23.4 19.5-38.6 19.5H224l-25.4 25.4c-12.5 12.5-32.8 12.5-45.3 0l-50.7-50.7c-12.5-12.5-12.5-32.8 0-45.3L128 320zM7 466.3l63-63 70.6 70.6-31 31c-4.5 4.5-10.6 7-17 7H24c-13.3 0-24-10.7-24-24v-4.7c0-6.4 2.5-12.5 7-17z" ></path></svg>
+        
+    </div>
+</body>
+</html>

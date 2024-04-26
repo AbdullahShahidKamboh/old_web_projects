@@ -1,0 +1,25 @@
+h2{
+
+    text-align: center;
+    color: rgb(167, 209, 209);
+    font-style: oblique;
+    
+    
+    
+}
+h3{
+
+    text-align: center;
+    color: rgb(167, 209, 209);
+    font-style: oblique;
+}
+article {
+    padding: 0;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+p{
+    padding: 10px;
+}
+   
